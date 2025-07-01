@@ -10,3 +10,59 @@
 .logo-codigo-dein:hover {
   transform: scale(1.15); /* Zoom al pasar el mouse */
 }
+
+/* Animaciones personalizadas */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes zoom-in {
+  from { opacity: 0; transform: scale(0.95);}
+  to { opacity: 1; transform: scale(1);}
+}
+.animate-fade-in {
+  animation: fade-in 1s ease;
+}
+.animate-zoom-in {
+  animation: zoom-in 1s ease;
+}
+
+/* Animación para enlaces del nav al hacer hover */
+nav ul li a {
+  transition: 
+    color 0.3s, 
+    transform 0.3s, 
+    border-radius 0.3s, 
+    background 0.3s;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:hover {
+  color: #6366f1; /* indigo-600 */
+  transform: scale(1.15) translateY(-2px);
+  border-radius: 1.5rem; /* Más curvo al hacer hover */
+  background: rgba(99,102,241,0.08); /* Sutil fondo al hacer hover */
+  text-shadow: 0 2px 8px rgba(99,102,241,0.15);
+}
+/* Animación para los iconos de servicios al hacer hover */
+article img.mx-auto.mb-4 {
+  transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+article:hover img.mx-auto.mb-4 {
+  transform: scale(1.18) rotate(-6deg);
+  box-shadow: 0 8px 24px 0 rgba(99,102,241,0.18);
+}
+
+#nosotros img:hover,
+#slider-track img:hover {
+  transform: scale(1.22);
+  transition: transform 0.5s cubic-bezier(.4,2,.6,1);
+  z-index: 2;
+}
+
+/* Asegura que las imágenes tengan transición suave por defecto */
+#nosotros img,
+#slider-track img {
+  transition: transform 0.5s cubic-bezier(.4,2,.6,1);
+}

@@ -1,126 +1,294 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codigo Dein - Moda Urbana</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="js/menu.js" defer></script>
-</head>
-<body class="bg-gray-50 text-gray-900">
-
-  <!-- Header -->
-<header class="bg-white shadow-md">
-  <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4 px-4 sm:px-6">
-    <!-- Logo, nombre y hamburguesa alineados a la izquierda -->
-    <div class="flex items-center space-x-3 mb-4 sm:mb-0 w-full sm:w-auto">
-      <button id="menu-btn" class="sm:hidden text-3xl focus:outline-none mr-4" aria-label="Abrir menú">
-        &#9776;
-      </button>
-      <img src="img\10.png" alt="Logo Codigo Dein" class="logo-codigo-dein">
-      <span class="text-2xl font-bold tracking-wide">Codigo Dein</span>
-    </div>
-    <!-- Menú de navegación -->
-    <nav id="nav-menu" class="w-full sm:w-auto sm:block hidden">
-      <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 font-medium text-center bg-white sm:bg-transparent py-4 sm:py-0 rounded sm:rounded-none shadow sm:shadow-none">
-        <li><a href="#nosotros" class="hover:text-indigo-600">Nosotros</a></li>
-        <li><a href="#servicios" class="hover:text-indigo-600">Servicios</a></li>
-        <li><a href="#galeria" class="hover:text-indigo-600">Galería</a></li>
-        <li><a href="#contacto" class="hover:text-indigo-600">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Nosotros -->
-<section id="nosotros" class="py-10 sm:py-16 bg-gray-100">
-  <div class="container mx-auto px-4 sm:px-6">
-    <article class="max-w-3xl mx-auto text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Sobre Codigo Dein</h2>
-      <p class="mb-6 text-base sm:text-lg">Codigo Dein es una marca de ropa urbana que fusiona estilo, comodidad y autenticidad. Nos apasiona crear prendas únicas para quienes buscan destacar y expresar su personalidad a través de la moda.</p>
-      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80" alt="Equipo de Codigo Dein" class="mx-auto rounded-lg shadow-lg w-full max-w-xs sm:max-w-md">
-    </article>
-  </div>
-</section>
-
-<!-- Servicios -->
-<section id="servicios" class="py-10 sm:py-16">
-  <div class="container mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Nuestros Servicios</h2>
-    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-      <article class="bg-white p-6 rounded-lg shadow-md text-center">
-        <img src="https://img.icons8.com/ios-filled/50/000000/clothes.png" alt="Diseño Exclusivo" class="mx-auto mb-4 w-12 h-12">
-        <h3 class="font-semibold text-lg sm:text-xl mb-2">Diseño Exclusivo</h3>
-        <p>Prendas originales diseñadas por nuestro equipo creativo, inspiradas en las últimas tendencias urbanas.</p>
-      </article>
-      <article class="bg-white p-6 rounded-lg shadow-md text-center">
-        <img src="https://img.icons8.com/ios-filled/50/000000/delivery.png" alt="Envíos Rápidos" class="mx-auto mb-4 w-12 h-12">
-        <h3 class="font-semibold text-lg sm:text-xl mb-2">Envíos Rápidos</h3>
-        <p>Recibe tus pedidos en tiempo récord, con envíos a todo el país y seguimiento en tiempo real.</p>
-      </article>
-      <article class="bg-white p-6 rounded-lg shadow-md text-center">
-        <img src="https://img.icons8.com/ios-filled/50/000000/support.png" alt="Atención Personalizada" class="mx-auto mb-4 w-12 h-12">
-        <h3 class="font-semibold text-lg sm:text-xl mb-2">Atención Personalizada</h3>
-        <p>Te asesoramos en cada paso para que encuentres el look perfecto y resuelvas todas tus dudas.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Galería -->
-<section id="galeria" class="py-10 sm:py-16 bg-gray-100">
-  <div class="container mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Galería</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <article>
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Camiseta urbana" class="rounded-lg shadow-md w-full h-56 sm:h-64 object-cover">
-      </article>
-      <article>
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Sudadera moderna" class="rounded-lg shadow-md w-full h-56 sm:h-64 object-cover">
-      </article>
-      <article>
-        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" alt="Look urbano" class="rounded-lg shadow-md w-full h-56 sm:h-64 object-cover">
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Contacto -->
-<section id="contacto" class="py-10 sm:py-16">
-  <div class="container mx-auto px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">Contáctanos</h2>
-    <form class="max-w-lg mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-md space-y-4 sm:space-y-6">
-      <div>
-        <label for="nombre" class="block font-medium mb-2">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+    <script src="js/slider.js" defer></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4 px-4 sm:px-6"
+      >
+        <!-- Logo, nombre y hamburguesa alineados a la izquierda -->
+        <div class="flex items-center space-x-3 mb-4 sm:mb-0 w-full sm:w-auto">
+          <button
+            id="menu-btn"
+            class="sm:hidden text-3xl focus:outline-none mr-4"
+            aria-label="Abrir menú"
+          >
+            &#9776;
+          </button>
+          <img
+            src="img\10.png"
+            alt="Logo Codigo Dein"
+            class="logo-codigo-dein"
+          />
+          <span class="text-2xl font-bold tracking-wide">Codigo Dein</span>
+        </div>
+        <!-- Menú de navegación -->
+        <nav id="nav-menu" class="w-full sm:w-auto sm:block hidden">
+          <ul
+            class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 font-medium text-center bg-white sm:bg-transparent py-4 sm:py-0 rounded sm:rounded-none shadow sm:shadow-none"
+          >
+            <li>
+              <a href="#nosotros" class="hover:text-indigo-600">Nosotros</a>
+            </li>
+            <li>
+              <a href="#servicios" class="hover:text-indigo-600">Servicios</a>
+            </li>
+            <li>
+              <a href="#galeria" class="hover:text-indigo-600">Galería</a>
+            </li>
+            <li>
+              <a href="#contacto" class="hover:text-indigo-600">Contacto</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div>
-        <label for="email" class="block font-medium mb-2">Correo electrónico</label>
-        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
-      </div>
-      <div>
-        <label for="mensaje" class="block font-medium mb-2">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
-      </div>
-      <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-2 rounded hover:bg-indigo-700 transition">Enviar</button>
-    </form>
-  </div>
-</section>
+    </header>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-200 py-8 mt-12">
-  <div class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-    <div>
-      &copy; 2025 Codigo Dein. Todos los derechos reservados. || Realizado por Eros Douglas Benitez Dos Santos.
-    </div>
-    <div class="flex space-x-4">
-      <a href="#" class="hover:text-indigo-400">Instagram</a>
-      <a href="#" class="hover:text-indigo-400">Facebook</a>
-      <a href="#" class="hover:text-indigo-400">Términos y condiciones</a>
-    </div>
-  </div>
-</footer>
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-10 sm:py-16 bg-gray-100">
+      <div class="container mx-auto px-4 sm:px-6">
+        <article class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-4">Sobre Codigo Dein</h2>
+          <p class="mb-6 text-base sm:text-lg">
+            Codigo Dein es una marca de ropa urbana que fusiona estilo,
+            comodidad y autenticidad. Nos apasiona crear prendas únicas para
+            quienes buscan destacar y expresar su personalidad a través de la
+            moda.
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80"
+            alt="Equipo de Codigo Dein"
+            class="mx-auto rounded-lg shadow-lg w-full max-w-xs sm:max-w-md"
+          />
+        </article>
+      </div>
+    </section>
 
-</body>
+    <!-- Servicios -->
+    <section id="servicios" class="py-10 sm:py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">
+          Nuestros Servicios
+        </h2>
+        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <article class="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/clothes.png"
+              alt="Diseño Exclusivo"
+              class="mx-auto mb-4 w-12 h-12"
+            />
+            <h3 class="font-semibold text-lg sm:text-xl mb-2">
+              Diseño Exclusivo
+            </h3>
+            <p>
+              Prendas originales diseñadas por nuestro equipo creativo,
+              inspiradas en las últimas tendencias urbanas.
+            </p>
+          </article>
+          <article class="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/delivery.png"
+              alt="Envíos Rápidos"
+              class="mx-auto mb-4 w-12 h-12"
+            />
+            <h3 class="font-semibold text-lg sm:text-xl mb-2">
+              Envíos Rápidos
+            </h3>
+            <p>
+              Recibe tus pedidos en tiempo récord, con envíos a todo el país y
+              seguimiento en tiempo real.
+            </p>
+          </article>
+          <article class="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/support.png"
+              alt="Atención Personalizada"
+              class="mx-auto mb-4 w-12 h-12"
+            />
+            <h3 class="font-semibold text-lg sm:text-xl mb-2">
+              Atención Personalizada
+            </h3>
+            <p>
+              Te asesoramos en cada paso para que encuentres el look perfecto y
+              resuelvas todas tus dudas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-10 sm:py-16 bg-gray-100">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 animate-fade-in"
+        >
+          Galería
+        </h2>
+        <div class="relative max-w-4xl mx-auto">
+          <div id="slider" class="overflow-hidden rounded-lg shadow-lg">
+            <div
+              class="flex transition-transform duration-700 ease-in-out"
+              id="slider-track"
+              style="transform: translateX(0)"
+            >
+              <img
+                src="img/1.png"
+                alt="Logo Codigo Dein 1"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/2.png"
+                alt="Logo Codigo Dein 2"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/3.png"
+                alt="Logo Codigo Dein 3"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/4.png"
+                alt="Logo Codigo Dein 4"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/5.png"
+                alt="Logo Codigo Dein 5"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/6.png"
+                alt="Logo Codigo Dein 6"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/7.png"
+                alt="Logo Codigo Dein 7"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/8.png"
+                alt="Logo Codigo Dein 8"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/9.png"
+                alt="Logo Codigo Dein 9"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/10.png"
+                alt="Logo Codigo Dein 10"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/11.png"
+                alt="Logo Codigo Dein 11"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+              <img
+                src="img/12.png"
+                alt="Logo Codigo Dein 12"
+                class="w-full h-[28rem] object-contain flex-shrink-0 animate-zoom-in"
+              />
+            </div>
+          </div>
+          <!-- Controles -->
+          <button
+            id="prev"
+            class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-indigo-500 hover:text-white text-2xl px-3 py-1 rounded-full shadow transition-all duration-300 z-10"
+          >
+            &#8592;
+          </button>
+          <button
+            id="next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-indigo-500 hover:text-white text-2xl px-3 py-1 rounded-full shadow transition-all duration-300 z-10"
+          >
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-10 sm:py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">
+          Contáctanos
+        </h2>
+        <form
+          class="max-w-lg mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-md space-y-4 sm:space-y-6"
+        >
+          <div>
+            <label for="nombre" class="block font-medium mb-2">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+          <div>
+            <label for="email" class="block font-medium mb-2"
+              >Correo electrónico</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+          <div>
+            <label for="mensaje" class="block font-medium mb-2">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-indigo-600 text-white font-semibold py-2 rounded hover:bg-indigo-700 transition"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-8 mt-12">
+      <div
+        class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center md:justify-between space-y-4 md:space-y-0 text-center md:text-left"
+      >
+        <div class="w-full md:w-auto">
+          &copy; 2025 Codigo Dein. Todos los derechos reservados.<br
+            class="block md:hidden"
+          />
+          || Realizado por Eros Douglas Benitez Dos Santos.
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full md:w-auto justify-center md:justify-end"
+        >
+          <a href="#" class="hover:text-indigo-400">Instagram</a>
+          <a href="#" class="hover:text-indigo-400">Facebook</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
