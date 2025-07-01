@@ -1,0 +1,12 @@
+.logo-codigo-dein {
+  width: 120px;         /* Más grande */
+  height: 120px;
+  border-radius: 9999px; /* Redonda */
+  object-fit: cover;
+  object-position: center;
+  /* Efecto de zoom */
+  transition: transform 0.3s;
+}
+.logo-codigo-dein:hover {
+  transform: scale(1.15); /* Zoom al pasar el mouse */
+}
