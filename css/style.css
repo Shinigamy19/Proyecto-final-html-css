@@ -132,3 +132,50 @@ article:hover img.mx-auto.mb-4 {
   color: #818cf8 !important;
 }
 
+#theme-dropdown .theme-button {
+  background: #f3f4f6 !important; /* gris claro */
+  color: #111 !important;         /* letras negras */
+  border: none !important;
+}
+#theme-dropdown .theme-button:hover,
+#theme-dropdown .theme-button:focus {
+  background: #e5e7eb !important; /* gris más claro al hover */
+  color: #111 !important;
+}
+
+/* Botón Sistema: modo oscuro */
+.dark #theme-dropdown .theme-button {
+  background: #18181b !important;
+  color: #fff !important;
+}
+.dark #theme-dropdown .theme-button:hover,
+.dark #theme-dropdown .theme-button:focus {
+  background: #27272a !important;
+  color: #fff !important;
+}
+
+#theme-dropdown button.theme-button[data-theme="system"] {
+  color: #111 !important;
+  background: #f3f4f6 !important;
+}
+#theme-dropdown button.theme-button[data-theme="system"]:hover,
+#theme-dropdown button.theme-button[data-theme="system"]:focus {
+  background: #e5e7eb !important;
+  color: #111 !important;
+}
+.dark #theme-dropdown button.theme-button[data-theme="system"] {
+  color: #fff !important;
+  background: #18181b !important;
+}
+.dark #theme-dropdown button.theme-button[data-theme="system"]:hover,
+.dark #theme-dropdown button.theme-button[data-theme="system"]:focus {
+  background: #27272a !important;
+  color: #fff !important;
+}
+
+#nav-menu a {
+  color: #111 !important;
+}
+.dark #nav-menu a {
+  color: #fff !important;
+}

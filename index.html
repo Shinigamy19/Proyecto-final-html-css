@@ -32,7 +32,7 @@
         >
           <button
             id="theme-toggle"
-            class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition w-full sm:w-auto justify-center"
+            class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-300 transition w-full sm:w-auto justify-center"
           >
             <span id="theme-icon">
               <!-- Icono ordenador (sistema) por defecto -->
@@ -80,12 +80,15 @@
           </button>
           <div
             id="theme-dropdown"
-            class="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded shadow-lg py-1 z-20 hidden"
+            class="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-300 rounded shadow-lg py-1 z-20 hidden"
           >
             <button
-              class="flex items-center w-full px-4 py-2 bg-white text-black hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 transition"
-              data-theme="system"
-            >
+    class="flex items-center w-full px-4 py-2 
+         bg-white hover:bg-gray-100 
+         dark:bg-gray-800 dark:hover:bg-gray-700 
+         transition theme-button"
+  data-theme="system"
+>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 mr-2"
@@ -106,7 +109,10 @@
               Sistema
             </button>
             <button
-              class="flex items-center w-full px-4 py-2 bg-white text-black hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 transition"
+              class="flex items-center w-full px-4 py-2 
+         bg-white hover:bg-gray-100 
+         dark:bg-gray-800 dark:hover:bg-gray-700 
+         transition theme-button"
               data-theme="light"
             >
               <svg
@@ -125,7 +131,10 @@
               Claro
             </button>
             <button
-              class="flex items-center w-full px-4 py-2 bg-white text-black hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 transition"
+              class="flex items-center w-full px-4 py-2 
+         bg-white hover:bg-gray-100 
+         dark:bg-gray-800 dark:hover:bg-gray-700 
+         transition theme-button"
               data-theme="dark"
             >
               <svg
@@ -152,7 +161,7 @@
             <li>
               <a
                 href="#nosotros"
-                class="text-black hover:text-gray-700 hover:bg-gray-100 px-3 py-1 rounded transition"
+                class="text-black dark:text-white hover:text-gray-700 hover:bg-gray-100 px-3 py-1 rounded transition"
                 >Nosotros</a
               >
             </li>
